@@ -1,7 +1,41 @@
 package com.kodilla.testing;
 
+import com.kodilla.testing.calculator.Calculator;
+
 public class TestingMain {
     public static void main(String[] args){
-        System.out.println("Moduł 6. Wprowadzenie do testowania oprogramowania");
+        Calculator myCalc = new Calculator(10,20);
+
+        int resultAdd = myCalc.add();
+        int resultDis = myCalc.subtract();
+
+        if (resultAdd > 10){
+            System.out.println("test OK");
+        } else {
+            System.out.println("Error!");
+        }
+        if (resultDis < 10){
+            System.out.println("test OK");
+        } else {
+            System.out.println("Error!");
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
