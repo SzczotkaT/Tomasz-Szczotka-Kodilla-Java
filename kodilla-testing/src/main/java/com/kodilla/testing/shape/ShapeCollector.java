@@ -1,26 +1,33 @@
 package com.kodilla.testing.shape;
 
-import sun.java2d.pipe.ShapeSpanIterator;
-
 import java.util.*;
 
 public class ShapeCollector {
-    private ArrayList<Shape> shapes = new ArrayList<Shape>();
+    public ArrayList<Shape> shapes = new ArrayList<>();
 
     public void addFigure(Shape shape){
         shapes.add(shape);
     }
 
-    public void removeFigure(Shape shape){
-        //temporarily, do nothing
+    public boolean removeFigure(Shape shape){
+        boolean result = false;
+        if(shapes.contains(shape)){
+            shapes.remove(shape);
+            result = true;
+        }
+        return result;
     }
 
     public Shape getFigure(int n){
-        //temporarily,
         return shapes.get(n);
     }
 
-    public void showFigures(){
-        //temporarily empty,
+    public String showFigures(){
+       String figString;
+        for(int i = 0; i<shapes.size();i++){
+          figString = shapes.get(i).toString();
+
+       }
+        return "jakis napis";
     }
 }

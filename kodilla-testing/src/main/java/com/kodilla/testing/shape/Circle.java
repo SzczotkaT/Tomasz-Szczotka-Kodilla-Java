@@ -34,4 +34,13 @@ public class Circle implements Shape {
     public int hashCode() {
         return Objects.hash(shapeName, PI, radius);
     }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "shapeName='" + shapeName + '\'' +
+                ", PI=" + PI +
+                ", radius=" + radius +
+                '}';
+    }
 }

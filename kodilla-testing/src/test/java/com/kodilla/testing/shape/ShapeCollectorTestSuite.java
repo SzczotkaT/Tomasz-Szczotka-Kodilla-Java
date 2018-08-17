@@ -2,7 +2,7 @@ package com.kodilla.testing.shape;
 
 import org.junit.*;
 import sun.java2d.pipe.ShapeSpanIterator;
-
+import com.kodilla.testing.shape.ShapeCollector;
 import java.util.*;
 
 public class ShapeCollectorTestSuite {
@@ -42,9 +42,46 @@ public class ShapeCollectorTestSuite {
     @Test
     public void testRemoveFigure(){
         //Given
-        ArrayList<Shape> shapes = new ArrayList<>();
+        ShapeCollector sc = new ShapeCollector();
+        sc.addFigure(new Circle("Circle", 5));
+        sc.addFigure(new Square("Square",6));
+        sc.addFigure(new Triangle("Triangle", 8, 5.5));
+        sc.addFigure(new Circle("Circle2", 10));
 
         //When
-       // shapes.remove(Shape);
+        boolean result = sc.removeFigure(new Circle("Circle2",10));
+
+        //Then
+        Assert.assertTrue(result);
+        Assert.assertEquals(3,sc.shapes.size());
+    }
+
+    @Test
+    public void testGetFigure(){
+        //Given
+        ShapeCollector sc = new ShapeCollector();
+
+        //When
+        sc.addFigure(new Circle("Circle", 5));
+        sc.addFigure(new Square("Square",6));
+        sc.addFigure(new Triangle("Triangle", 8, 5.5));
+        sc.addFigure(new Circle("Circle2", 10));
+
+        //Then
+        Assert.assertEquals(new Square("Square",6),sc.getFigure(1));
+    }
+    @Test
+    public void testShowFigure() {
+        //Given
+        ShapeCollector sc = new ShapeCollector();
+
+        //When
+        sc.addFigure(new Circle("Circle", 5));
+        sc.addFigure(new Square("Square", 6));
+        sc.addFigure(new Triangle("Triangle", 8, 5.5));
+        sc.addFigure(new Circle("Circle2", 10));
+
+        //Then
+        Assert.assertEquals(new Circle("Circle2", 10), sc.showFigures());
     }
 }

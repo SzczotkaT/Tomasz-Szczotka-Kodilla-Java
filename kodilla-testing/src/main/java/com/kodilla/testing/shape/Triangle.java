@@ -35,4 +35,13 @@ public class Triangle implements Shape {
     public int hashCode() {
         return Objects.hash(shapeName, side, height);
     }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "shapeName='" + shapeName + '\'' +
+                ", side=" + side +
+                ", height=" + height +
+                '}';
+    }
 }

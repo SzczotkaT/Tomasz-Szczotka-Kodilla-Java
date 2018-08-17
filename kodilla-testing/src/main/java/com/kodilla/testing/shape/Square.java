@@ -32,4 +32,12 @@ public class Square implements Shape {
     public int hashCode() {
         return Objects.hash(shapeName, side);
     }
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                "shapeName='" + shapeName + '\'' +
+                ", side=" + side +
+                '}';
+    }
 }
