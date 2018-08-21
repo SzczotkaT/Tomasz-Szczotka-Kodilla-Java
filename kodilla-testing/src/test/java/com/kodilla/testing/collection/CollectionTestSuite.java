@@ -1,11 +1,9 @@
 package com.kodilla.testing.collection;
 
-import com.kodilla.testing.collection.OddNumbersExterminator;
+
 import org.junit.*;
-
 import java.util.ArrayList;
-import java.util.Random;
-
+import java.util.List;
 
 public class CollectionTestSuite {
     @Before
@@ -34,17 +32,18 @@ public class CollectionTestSuite {
         OddNumbersExterminator oddNumbEx = new OddNumbersExterminator();
 
         //When
-        ArrayList<Integer> numbers = new ArrayList<>();
+        List<Integer> numbers = new ArrayList<>();
 
         //Then
-        ArrayList<Integer> resultList = oddNumbEx.exterminate(numbers);
+        List<Integer> resultList = oddNumbEx.exterminate(numbers);
+        Assert.assertTrue(resultList.isEmpty());
     }
 
     @Test
     public void testOddNumbersExterminatorNormalList() {
         //Given
         OddNumbersExterminator oddNumbEx = new OddNumbersExterminator();
-        ArrayList<Integer> numbers = new ArrayList<>();
+        List<Integer> numbers = new ArrayList<>();
 
         numbers.add(3);
         numbers.add(4);
@@ -52,14 +51,17 @@ public class CollectionTestSuite {
         numbers.add(8);
         numbers.add(10);
 
+        List<Integer> expectedNumbers = new ArrayList<>();
+
+        expectedNumbers.add(4);
+        expectedNumbers.add(8);
+        expectedNumbers.add(10);
+
         //When
-        ArrayList<Integer> result = oddNumbEx.exterminate(numbers);
+        List<Integer> result = oddNumbEx.exterminate(numbers);
 
         //Then
         Assert.assertEquals(3,result.size());
-        for(int n =0; n<result.size(); n++){
-            Assert.assertEquals(0,result.get(n) % 2);
-        }
-
+        Assert.assertEquals(expectedNumbers, result);
     }
 }
