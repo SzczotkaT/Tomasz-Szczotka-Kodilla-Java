@@ -16,10 +16,6 @@ public final class Country {
         return countryName;
     }
 
-    public BigDecimal getPopulation() {
-        return population;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

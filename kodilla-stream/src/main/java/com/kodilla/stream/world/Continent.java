@@ -1,11 +1,13 @@
 package com.kodilla.stream.world;
 
+import java.math.BigDecimal;
 import java.util.*;
+import java.util.Set;
 
 
 public final class Continent {
     private final String continentName;
-    private final List<Country> countriesOnTheContinent = new ArrayList<>();
+    private final Set<Country> countriesOnTheContinent = new HashSet<>();
 
     public Continent(final String continentName) {
         this.continentName = continentName;
@@ -15,7 +17,7 @@ public final class Continent {
         return continentName;
     }
 
-    public List<Country> getCountriesOnTheContinent() {
+    public Set<Country> getCountriesOnTheContinent() {
         return countriesOnTheContinent;
     }
 }
