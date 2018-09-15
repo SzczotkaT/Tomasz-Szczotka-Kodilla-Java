@@ -15,6 +15,9 @@ public final class Country {
     public String getCountryName() {
         return countryName;
     }
+    public BigDecimal getPeopleQuantity(){
+        return population;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -30,7 +33,11 @@ public final class Country {
         return Objects.hash(countryName, population);
     }
 
-    public BigDecimal getPeopleQuantity(){
-        return population;
+    @Override
+    public String toString() {
+        return "Country{" +
+                "countryName='" + countryName + '\'' +
+                ", population=" + population +
+                '}';
     }
 }
