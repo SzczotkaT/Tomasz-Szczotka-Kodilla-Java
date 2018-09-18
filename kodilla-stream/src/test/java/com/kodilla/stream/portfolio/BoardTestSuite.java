@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -136,6 +137,26 @@ public class BoardTestSuite {
         //Then
         Assert.assertEquals(2, longTasks);
     }
+    @Test
+    public void testAddTaskListAverageWorkingOnTask() {
+        //Given
+        Board project = prepareTestData();
 
+        //When
+        List<TaskList> inProgressTask = new ArrayList<>();
+        inProgressTask.add(new TaskList("In progress"));
+
+        double days = project.getTaskLists().stream()
+                .filter(inProgressTask::contains)
+                .flatMap(t -> t.getTasks().stream())
+                .mapToInt(c -> Period.between(c.getCreated(),LocalDate.now()).getDays())
+                .average().getAsDouble();
+
+
+
+        //Then
+        Assert.assertEquals(10,days,0.001);
+
+    }
 
 }
