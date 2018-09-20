@@ -4,7 +4,6 @@ public class FlightFinderRunner {
     public static void main(String[] args){
 
         Flight flight = new Flight("Nykoping-Skavsta","Stockholm-Arlanda");
-        //Flight flight1 = new Flight("Krakow-John Paul II", "Warsaw-Modlin");
 
         FlightFinder finder = new FlightFinder();
         try{
