@@ -1,12 +1,14 @@
-package com.kodilla.good.patterns.challenges;
+package com.kodilla.good.patterns.challenges.OrderService;
+
+import java.time.LocalDate;
 
 public class OrderProcessor {
     private InformationService informationService;
-    private OrderService orderService;
+    private ProductOrderService orderService;
     private OrderRepository orderRepository;
 
     public OrderProcessor(final InformationService informationService,
-                          final OrderService orderService,
+                          final ProductOrderService orderService,
                           final OrderRepository orderRepository) {
         this.informationService = informationService;
         this.orderService = orderService;
@@ -17,7 +19,7 @@ public class OrderProcessor {
         boolean isOrdered = orderService.order(orderRequest.getUser(), orderRequest.getOrderDate());
         if(isOrdered){
             informationService.inform(orderRequest.getUser());
-            orderRepository.createOrder(orderRequest.getUser(),orderRequest.getOrderDate());
+            orderRepository.createOrder(orderRequest.getUser(), orderRequest.getOrderDate());
             return new OrderDto(orderRequest.getUser(), true);
         }else{
             return new OrderDto(orderRequest.getUser(), false);

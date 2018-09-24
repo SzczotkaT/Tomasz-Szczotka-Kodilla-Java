@@ -1,14 +1,14 @@
-package com.kodilla.good.patterns.challenges;
+package com.kodilla.good.patterns.challenges.OrderService;
 
 public class User {
     private String name;
     private String lastName;
-    private String addres;
+    private String address;
 
-    public User(String name, String lastName, String addres) {
+    public User(String name, String lastName, String address) {
         this.name = name;
         this.lastName = lastName;
-        this.addres = addres;
+        this.address = address;
     }
 
     public String getName() {
@@ -19,8 +19,8 @@ public class User {
         return lastName;
     }
 
-    public String getAddres() {
-        return addres;
+    public String getAddress() {
+        return address;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class User {
         return "User{" +
                 "name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", addres='" + addres + '\'' +
+                ", address='" + address + '\'' +
                 '}';
     }
 }
