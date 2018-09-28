@@ -10,5 +10,10 @@ public class FlyAwayRunner {
 
         FlightToFinder flightToFinder = new FlightToFinder();
         flightToFinder.findTo();
+
+        System.out.println("--------------------------------------------");
+
+        FlightToByFinder flightToByFinder = new FlightToByFinder();
+        flightToByFinder.findToBy();
     }
 }
