@@ -16,7 +16,7 @@ public class BookDirectoryTestSuite {
 
     private List<Book> generateListOfNBooks(int booksQuantity) {
         List<Book> resultList = new ArrayList<Book>();
-        for(int n = 1; n <= booksQuantity; n++){
+        for (int n = 1; n <= booksQuantity; n++) {
             Book theBook = new Book("Title " + n, "Author " + n, 1970 + n);
             resultList.add(theBook);
         }
@@ -45,7 +45,7 @@ public class BookDirectoryTestSuite {
 
         // Then
         assertEquals(4, theListOfBooks.size());
-}
+    }
 
     @Test
     public void testListBooksWithConditionMoreThan20() {
@@ -98,7 +98,7 @@ public class BookDirectoryTestSuite {
         LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         List<Book> resultOf0Books = generateListOfNBooks(0);
-        LibraryUser myUser = new LibraryUser("Firstname","Lastname", "84847373");
+        LibraryUser myUser = new LibraryUser("Firstname", "Lastname", "84847373");
         when(libraryDatabaseMock.listBooksInHandsOf(myUser))
                 .thenReturn(resultOf0Books);
 
@@ -116,7 +116,7 @@ public class BookDirectoryTestSuite {
         LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         List<Book> resultOf1Books = generateListOfNBooks(1);
-        LibraryUser myUser = new LibraryUser("Firstname","Lastname", "84847373");
+        LibraryUser myUser = new LibraryUser("Firstname", "Lastname", "84847373");
         when(libraryDatabaseMock.listBooksInHandsOf(myUser))
                 .thenReturn(resultOf1Books);
 
@@ -126,6 +126,7 @@ public class BookDirectoryTestSuite {
         // Then
         assertEquals(resultOf1Books, resultList);
     }
+
     @Test
     public void testListBookInHandsOf5Book() {
 
@@ -133,7 +134,7 @@ public class BookDirectoryTestSuite {
         LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         List<Book> resultOf5Books = generateListOfNBooks(5);
-        LibraryUser myUser = new LibraryUser("Firstname","Lastname", "84847373");
+        LibraryUser myUser = new LibraryUser("Firstname", "Lastname", "84847373");
         when(libraryDatabaseMock.listBooksInHandsOf(myUser))
                 .thenReturn(resultOf5Books);
 

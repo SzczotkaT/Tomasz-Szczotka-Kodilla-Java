@@ -15,7 +15,8 @@ public final class Country {
     public String getCountryName() {
         return countryName;
     }
-    public BigDecimal getPeopleQuantity(){
+
+    public BigDecimal getPeopleQuantity() {
         return population;
     }
 

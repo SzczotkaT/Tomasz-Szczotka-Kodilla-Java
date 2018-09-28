@@ -1,18 +1,18 @@
 package com.kodilla.exception.test;
 
 public class FlightFinderRunner {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        Flight flight = new Flight("Nykoping-Skavsta","Stockholm-Arlanda");
+        Flight flight = new Flight("Nykoping-Skavsta", "Stockholm-Arlanda");
 
         FlightFinder finder = new FlightFinder();
-        try{
+        try {
             finder.findFlight(flight);
 
-        }catch (RouteNotFoundException e){
+        } catch (RouteNotFoundException e) {
             System.out.println("Can't find an available flight");
 
-        }finally {
+        } finally {
             System.out.println(" ex. Counting search amount");
         }
     }

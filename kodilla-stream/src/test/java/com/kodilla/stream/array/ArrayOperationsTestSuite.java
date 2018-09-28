@@ -6,11 +6,11 @@ import org.junit.Test;
 public class ArrayOperationsTestSuite {
 
     @Test
-    public void testArrayOperations(){
+    public void testArrayOperations() {
         //Given
         int[] numbers = new int[20];
 
-        for(int i = 1; i < 20;i++){
+        for (int i = 1; i < 20; i++) {
             numbers[i] = i;
         }
 
@@ -18,6 +18,6 @@ public class ArrayOperationsTestSuite {
 
 
         //Then
-        Assert.assertEquals(9.5, (double)ArrayOperations.getAverage(numbers),0.0001);
+        Assert.assertEquals(9.5, (double) ArrayOperations.getAverage(numbers), 0.0001);
     }
 }

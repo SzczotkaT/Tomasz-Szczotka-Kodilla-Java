@@ -8,10 +8,10 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public final class ForumUser {
-        private final String username;
-        private final String realName;
-        private final String location;
-        private final Set<ForumUser> friends = new HashSet<>();
+    private final String username;
+    private final String realName;
+    private final String location;
+    private final Set<ForumUser> friends = new HashSet<>();
 
     public ForumUser(final String username, final String realName, final String location) {
         this.username = username;
@@ -19,11 +19,11 @@ public final class ForumUser {
         this.location = location;
     }
 
-    public void addFriend(ForumUser user){
+    public void addFriend(ForumUser user) {
         friends.add(user);
     }
 
-    public boolean removeFriends(ForumUser user){
+    public boolean removeFriends(ForumUser user) {
         return friends.remove(user);
     }
 
@@ -65,13 +65,13 @@ public final class ForumUser {
         return Objects.hash(username);
     }
 
-    public Set<String> getLocationsOfFriends(){
+    public Set<String> getLocationsOfFriends() {
         return friends.stream()
                 .map(friend -> friend.getLocation())
                 .collect(Collectors.toSet());
     }
 
-    public Set<String> getLocationsOfFriendsOfFriends(){
+    public Set<String> getLocationsOfFriendsOfFriends() {
         return friends.stream()
                 .flatMap(user -> user.getFriends().stream())
                 .filter(user -> user != this)

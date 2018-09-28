@@ -2,14 +2,15 @@ package com.kodilla.stream.world;
 
 import org.junit.Assert;
 import org.junit.Test;
+
 import java.math.BigDecimal;
 import java.util.*;
 
 public class WorldTestSuite {
     @Test
-    public void testGetPeopleQuantity(){
+    public void testGetPeopleQuantity() {
         //Given
-        Country poland = new Country("Poland",new BigDecimal("5857657424"));
+        Country poland = new Country("Poland", new BigDecimal("5857657424"));
         Country germany = new Country("Germany", new BigDecimal("7980493536"));
         Country france = new Country("France", new BigDecimal("8992828384"));
 
@@ -36,7 +37,7 @@ public class WorldTestSuite {
 
         //Then
         BigDecimal expectedWorldQuantity = new BigDecimal("28580654370");
-        Assert.assertEquals(expectedWorldQuantity,world.getPeopleQuantity());
+        Assert.assertEquals(expectedWorldQuantity, world.getPeopleQuantity());
     }
 
 }

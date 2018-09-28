@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class People {
-    public static List<String> getList(){
+    public static List<String> getList() {
         final List<String> theList = new ArrayList<>();
         theList.add("John Smith");
         theList.add("Dorothy Newman");

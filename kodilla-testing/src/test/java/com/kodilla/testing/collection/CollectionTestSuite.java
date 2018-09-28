@@ -2,6 +2,7 @@ package com.kodilla.testing.collection;
 
 
 import org.junit.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,7 +62,7 @@ public class CollectionTestSuite {
         List<Integer> result = oddNumbEx.exterminate(numbers);
 
         //Then
-        Assert.assertEquals(3,result.size());
+        Assert.assertEquals(3, result.size());
         Assert.assertEquals(expectedNumbers, result);
     }
 }

@@ -29,7 +29,7 @@ public class MovieStore {
         return filmsTitlesWithTranslations;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         MovieStore movieStore = new MovieStore();
         String theresultOfJoining = movieStore.getMovies().entrySet().stream()
                 .flatMap(m -> m.getValue().stream())
@@ -37,5 +37,5 @@ public class MovieStore {
                 .collect(Collectors.joining(" ! ", " ! ", "\n"));
 
         System.out.println(theresultOfJoining);
-}
+    }
 }

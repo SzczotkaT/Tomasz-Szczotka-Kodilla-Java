@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class StatisticsTestSuite {
 
     @Test
-    public void testPostAmount0(){
+    public void testPostAmount0() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         List<String> userList = new ArrayList<>();
@@ -36,13 +36,13 @@ public class StatisticsTestSuite {
         statisticsCalculation.calculateAdvStatistics(statisticsMock);
 
         //Then
-        assertEquals(0,statisticsCalculation.getAvgPostsPerUser(),0.00001);
-        assertEquals(20,statisticsCalculation.getAvgCommentsPerUser(),0.00001);
-        assertEquals(0,statisticsCalculation.getAvgCommentPerPost(),0.00001);
+        assertEquals(0, statisticsCalculation.getAvgPostsPerUser(), 0.00001);
+        assertEquals(20, statisticsCalculation.getAvgCommentsPerUser(), 0.00001);
+        assertEquals(0, statisticsCalculation.getAvgCommentPerPost(), 0.00001);
     }
 
     @Test
-    public void testPostAmount1000(){
+    public void testPostAmount1000() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         List<String> userList = new ArrayList<>();
@@ -61,13 +61,13 @@ public class StatisticsTestSuite {
         statisticsCalculation.calculateAdvStatistics(statisticsMock);
 
         //Then
-        assertEquals(200,statisticsCalculation.getAvgPostsPerUser(),0.00001);
-        assertEquals(20,statisticsCalculation.getAvgCommentsPerUser(),0.00001);
-        assertEquals(0,statisticsCalculation.getAvgCommentPerPost(),0.00001);
+        assertEquals(200, statisticsCalculation.getAvgPostsPerUser(), 0.00001);
+        assertEquals(20, statisticsCalculation.getAvgCommentsPerUser(), 0.00001);
+        assertEquals(0, statisticsCalculation.getAvgCommentPerPost(), 0.00001);
     }
 
     @Test
-    public void testCommentsAmount0(){
+    public void testCommentsAmount0() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         List<String> userList = new ArrayList<>();
@@ -86,12 +86,13 @@ public class StatisticsTestSuite {
         statisticsCalculation.calculateAdvStatistics(statisticsMock);
 
         //Then
-        assertEquals(200,statisticsCalculation.getAvgPostsPerUser(),0.00001);
-        assertEquals(0,statisticsCalculation.getAvgCommentsPerUser(),0.00001);
-        assertEquals(0,statisticsCalculation.getAvgCommentPerPost(),0.00001);
+        assertEquals(200, statisticsCalculation.getAvgPostsPerUser(), 0.00001);
+        assertEquals(0, statisticsCalculation.getAvgCommentsPerUser(), 0.00001);
+        assertEquals(0, statisticsCalculation.getAvgCommentPerPost(), 0.00001);
     }
+
     @Test
-    public void testCommentsLessThenPosts(){
+    public void testCommentsLessThenPosts() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         List<String> userList = new ArrayList<>();
@@ -110,13 +111,13 @@ public class StatisticsTestSuite {
         statisticsCalculation.calculateAdvStatistics(statisticsMock);
 
         //Then
-        assertEquals(200,statisticsCalculation.getAvgPostsPerUser(),0.00001);
-        assertEquals(0,statisticsCalculation.getAvgCommentsPerUser(),0.00001);
-        assertEquals(0,statisticsCalculation.getAvgCommentPerPost(),0.00001);
+        assertEquals(200, statisticsCalculation.getAvgPostsPerUser(), 0.00001);
+        assertEquals(0, statisticsCalculation.getAvgCommentsPerUser(), 0.00001);
+        assertEquals(0, statisticsCalculation.getAvgCommentPerPost(), 0.00001);
     }
 
     @Test
-    public void testCommentsBiggerThenPosts(){
+    public void testCommentsBiggerThenPosts() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         List<String> userList = new ArrayList<>();
@@ -135,13 +136,13 @@ public class StatisticsTestSuite {
         statisticsCalculation.calculateAdvStatistics(statisticsMock);
 
         //Then
-        assertEquals(20,statisticsCalculation.getAvgPostsPerUser(),0.00001);
-        assertEquals(200,statisticsCalculation.getAvgCommentsPerUser(),0.00001);
-        assertEquals(10,statisticsCalculation.getAvgCommentPerPost(),0.00001);
+        assertEquals(20, statisticsCalculation.getAvgPostsPerUser(), 0.00001);
+        assertEquals(200, statisticsCalculation.getAvgCommentsPerUser(), 0.00001);
+        assertEquals(10, statisticsCalculation.getAvgCommentPerPost(), 0.00001);
     }
 
     @Test
-    public void testUsersAmount0(){
+    public void testUsersAmount0() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         List<String> userList = new ArrayList<>();
@@ -155,16 +156,17 @@ public class StatisticsTestSuite {
         statisticsCalculation.calculateAdvStatistics(statisticsMock);
 
         //Then
-        assertEquals(0,statisticsCalculation.getAvgPostsPerUser(),0.00001);
-        assertEquals(0,statisticsCalculation.getAvgCommentsPerUser(),0.00001);
-        assertEquals(10,statisticsCalculation.getAvgCommentPerPost(),0.00001);
+        assertEquals(0, statisticsCalculation.getAvgPostsPerUser(), 0.00001);
+        assertEquals(0, statisticsCalculation.getAvgCommentsPerUser(), 0.00001);
+        assertEquals(10, statisticsCalculation.getAvgCommentPerPost(), 0.00001);
     }
+
     @Test
-    public void testUsersAmount100(){
+    public void testUsersAmount100() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
         List<String> userList = new ArrayList<>();
-        for(int i = 1; i<100; i++){
+        for (int i = 1; i < 100; i++) {
             userList.add("Kodi" + i);
         }
 
@@ -177,9 +179,9 @@ public class StatisticsTestSuite {
         statisticsCalculation.calculateAdvStatistics(statisticsMock);
 
         //Then
-        assertEquals(1,statisticsCalculation.getAvgPostsPerUser(),0.00001);
-        assertEquals(10,statisticsCalculation.getAvgCommentsPerUser(),0.00001);
-        assertEquals(10,statisticsCalculation.getAvgCommentPerPost(),0.00001);
+        assertEquals(1, statisticsCalculation.getAvgPostsPerUser(), 0.00001);
+        assertEquals(10, statisticsCalculation.getAvgCommentsPerUser(), 0.00001);
+        assertEquals(10, statisticsCalculation.getAvgCommentPerPost(), 0.00001);
     }
 
 }

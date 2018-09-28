@@ -42,27 +42,27 @@ public class StatisticsCalculation {
     }
 
 
-    public void calculateAdvStatistics(Statistics statistics){
+    public void calculateAdvStatistics(Statistics statistics) {
         usersAmount = statistics.usersNames().size();
         postsAmount = statistics.postsCount();
         commentsAmount = statistics.commentsCount();
 
-        if(usersAmount > 0) {
-            avgPostsPerUser = postsAmount/usersAmount;
-            avgCommentsPerUser = commentsAmount/usersAmount;
+        if (usersAmount > 0) {
+            avgPostsPerUser = postsAmount / usersAmount;
+            avgCommentsPerUser = commentsAmount / usersAmount;
         } else {
             avgPostsPerUser = 0;
             avgCommentsPerUser = 0;
         }
 
-        if(postsAmount > 0) {
-            avgCommentPerPost = commentsAmount/postsAmount;
+        if (postsAmount > 0) {
+            avgCommentPerPost = commentsAmount / postsAmount;
         } else {
             avgCommentPerPost = 0;
         }
     }
 
-    public void showStatistics(){
+    public void showStatistics() {
         System.out.println("Amount of users is: " + usersAmount);
         System.out.println("Amount of posts is: " + postsAmount);
         System.out.println("Amount of comments is: " + commentsAmount);
