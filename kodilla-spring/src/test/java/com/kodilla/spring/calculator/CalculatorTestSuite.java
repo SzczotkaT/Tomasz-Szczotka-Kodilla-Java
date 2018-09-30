@@ -1,6 +1,5 @@
 package com.kodilla.spring.calculator;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -13,9 +12,9 @@ public class CalculatorTestSuite {
                 new AnnotationConfigApplicationContext("com.kodilla.spring");
         Calculator calculator = context.getBean(Calculator.class);
         //When
-        double res = calculator.add(5,5);
+        calculator.add(5,5);
         //Then
-        Assert.assertEquals(10,res,0.001);
+
     }
 
     @Test
@@ -25,9 +24,9 @@ public class CalculatorTestSuite {
                 new AnnotationConfigApplicationContext("com.kodilla.spring");
         Calculator calculator = context.getBean(Calculator.class);
         //When
-        double res = calculator.sub(5,5);
+        calculator.sub(5,5);
         //Then
-        Assert.assertEquals(0,res,0.001);
+
     }
 
     @Test
@@ -37,9 +36,8 @@ public class CalculatorTestSuite {
                 new AnnotationConfigApplicationContext("com.kodilla.spring");
         Calculator calculator = context.getBean(Calculator.class);
         //When
-        double res = calculator.mul(5,5);
+        calculator.mul(5,5);
         //Then
-        Assert.assertEquals(25,res,0.001);
     }
 
     @Test
@@ -49,8 +47,7 @@ public class CalculatorTestSuite {
                 new AnnotationConfigApplicationContext("com.kodilla.spring");
         Calculator calculator = context.getBean(Calculator.class);
         //When
-        double res = calculator.div(5,5);
+        calculator.div(5,5);
         //Then
-        Assert.assertEquals(1,res,0.001);
     }
 }
