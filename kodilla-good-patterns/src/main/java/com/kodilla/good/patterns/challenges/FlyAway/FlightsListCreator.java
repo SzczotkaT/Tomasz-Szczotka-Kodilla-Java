@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class FlightsListCreator {
-    public FlightsList create(){
+    public FlightsList create() {
         Flight flightW1 = new Flight("Warsaw", "Krakow", 10);
         Flight flightW2 = new Flight("Warsaw", "Gdansk", 20);
         Flight flightK1 = new Flight("Krakow", "Warsaw", 110);

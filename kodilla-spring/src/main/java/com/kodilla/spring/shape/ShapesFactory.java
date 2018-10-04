@@ -8,20 +8,20 @@ import java.util.Random;
 @Configuration
 public class ShapesFactory {
     @Bean
-    public Square createSquare(){
+    public Square createSquare() {
         return new Square();
     }
 
     @Bean
-    public Shape chosenShape(){
+    public Shape chosenShape() {
         Shape theShape;
         Random generator = new Random();
         int chosen = generator.nextInt(3);
-        if(chosen == 0){
+        if (chosen == 0) {
             theShape = new Triangle();
-        }else if (chosen == 1){
+        } else if (chosen == 1) {
             theShape = new Circle();
-        }else{
+        } else {
             theShape = new Square();
         }
         return theShape;

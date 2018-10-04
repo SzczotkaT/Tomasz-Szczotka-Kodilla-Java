@@ -10,18 +10,18 @@ public class Library {
     private final List<String> books = new ArrayList<>();
     private LibraryDbController libraryDbController;
 
-    public Library(final LibraryDbController libraryDbController){
+    public Library(final LibraryDbController libraryDbController) {
         this.libraryDbController = libraryDbController;
     }
 
-    public Library(){
+    public Library() {
     }
 
-    public void saveToDb(){
+    public void saveToDb() {
         libraryDbController.saveData();
     }
 
-    public void loadFromDb(){
+    public void loadFromDb() {
         libraryDbController.loadData();
     }
 }

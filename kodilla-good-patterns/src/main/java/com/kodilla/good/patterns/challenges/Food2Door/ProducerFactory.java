@@ -1,9 +1,9 @@
 package com.kodilla.good.patterns.challenges.Food2Door;
 
 public class ProducerFactory {
-    public static Producer createProducer(Stores store){
+    public static Producer createProducer(Stores store) {
         Producer producer = null;
-        switch (store){
+        switch (store) {
             case HEALTHY_SHOP:
                 return new HealthyShop();
             case EXTRA_FOOD_SHOP:

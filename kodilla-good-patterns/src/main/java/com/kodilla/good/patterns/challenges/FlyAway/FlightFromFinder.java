@@ -6,7 +6,7 @@ public class FlightFromFinder {
     FlightsListCreator flightsListCreator = new FlightsListCreator();
     FlightsList flightsList = flightsListCreator.create();
 
-    public void findFrom(){
+    public void findFrom() {
         flightsList.getFlightsSet().stream()
                 .filter(f -> f.getFrom().equals("Warsaw"))
                 .collect(Collectors.toSet())

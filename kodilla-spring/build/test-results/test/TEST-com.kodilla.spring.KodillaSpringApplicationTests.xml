@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.spring.KodillaSpringApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-09-27T18:19:35" hostname="Tomek-Komputer" time="0.277">
-  <properties/>
-  <testcase name="contextLoads" classname="com.kodilla.spring.KodillaSpringApplicationTests" time="0.277"/>
-  <system-out><![CDATA[20:19:31.229 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.kodilla.spring.KodillaSpringApplicationTests]
+<testsuite name="com.kodilla.spring.KodillaSpringApplicationTests" tests="1" skipped="0" failures="0" errors="0"
+           timestamp="2018-09-27T18:19:35" hostname="Tomek-Komputer" time="0.277">
+    <properties/>
+    <testcase name="contextLoads" classname="com.kodilla.spring.KodillaSpringApplicationTests" time="0.277"/>
+    <system-out><![CDATA[20:19:31.229 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.kodilla.spring.KodillaSpringApplicationTests]
 20:19:31.270 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
 20:19:31.316 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
 20:19:31.398 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.kodilla.spring.KodillaSpringApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
@@ -58,5 +59,5 @@
 2018-09-27 20:19:33.919  INFO 1452 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3de07f42: startup date [Thu Sep 27 20:19:33 CEST 2018]; root of context hierarchy
 2018-09-27 20:19:35.836  INFO 1452 --- [    Test worker] c.k.s.KodillaSpringApplicationTests      : Started KodillaSpringApplicationTests in 3.071 seconds (JVM running for 7.888)
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+    <system-err><![CDATA[]]></system-err>
 </testsuite>
