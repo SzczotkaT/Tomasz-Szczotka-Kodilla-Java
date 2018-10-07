@@ -1,6 +1,8 @@
-include 'kodilla-exception'
-include 'kodilla-good-patterns'
-include 'kodilla-spring'
-include 'kodilla-spring-intro'
-include 'kodilla-stream'
-include 'kodilla-testing'
+rootProject.name = 'kodilla-spring-web'
+include("kodilla-spring-web")
+include("kodilla-exception")
+include("kodilla-good-patterns")
+include("kodilla-spring")
+include("kodilla-spring-intro")
+include("kodilla-stream")
+include("kodilla-testing")

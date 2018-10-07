@@ -15,7 +15,7 @@ public class BoardTestSuite {
     private Board board;
 
     @Test
-    public void testBoard(){
+    public void testBoard() {
         //When
         board.getDoneList().getTasks().add("Task 1");
         board.getInProgressList().getTasks().add("Task 2");
