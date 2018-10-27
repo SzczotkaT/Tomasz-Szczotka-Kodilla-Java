@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.forum.ForumTestSuite" tests="2" skipped="0" failures="0" errors="0"
-           timestamp="2018-09-27T18:19:51" hostname="Tomek-Komputer" time="0.017">
-    <properties/>
-    <testcase name="testCaseRealName" classname="com.kodilla.testing.forum.ForumTestSuite" time="0.012"/>
-    <testcase name="testCaseUsername" classname="com.kodilla.testing.forum.ForumTestSuite" time="0.003"/>
-    <system-out><![CDATA[Test Suite: begin
+<testsuite name="com.kodilla.testing.forum.ForumTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-10-27T16:01:21" hostname="Tomek-Komputer" time="0.003">
+  <properties/>
+  <testcase name="testCaseRealName" classname="com.kodilla.testing.forum.ForumTestSuite" time="0.002"/>
+  <testcase name="testCaseUsername" classname="com.kodilla.testing.forum.ForumTestSuite" time="0.001"/>
+  <system-out><![CDATA[Test Suite: begin
 Test Case: begin
 Testing John Smith
 Test Case: end
@@ -13,5 +12,5 @@ Testing theForumUser
 Test Case: end
 Test Suite: end
 ]]></system-out>
-    <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

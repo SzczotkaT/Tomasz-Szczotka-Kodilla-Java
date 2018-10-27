@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.strategy.CustomerTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-10-27T15:49:03" hostname="Tomek-Komputer" time="0.008">
+  <properties/>
+  <testcase name="testIndividualInvestingStrategy" classname="com.kodilla.patterns.strategy.CustomerTestSuite" time="0.005"/>
+  <testcase name="testDefaultInvestingStrategies" classname="com.kodilla.patterns.strategy.CustomerTestSuite" time="0.002"/>
+  <system-out><![CDATA[Steven should: [Conservative predictor] Buy debentures of XYZ
+Steven now should: [Aggressive predictor] Buy stock of XYZ
+Steven should buy: [Conservative predictor] Buy debentures of XYZ
+John should buy: [Aggressive predictor] Buy stock of XYZ
+Kodilla should buy: [Balanced predictor] Buy shared units of Fund XYZ
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.singleton.SettingsFileEngineTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-10-27T15:49:03" hostname="Tomek-Komputer" time="0.003">
+  <properties/>
+  <testcase name="testSaveSettings" classname="com.kodilla.patterns.singleton.SettingsFileEngineTestSuite" time="0.0"/>
+  <testcase name="testLoadSettings" classname="com.kodilla.patterns.singleton.SettingsFileEngineTestSuite" time="0.0"/>
+  <testcase name="testGetFileName" classname="com.kodilla.patterns.singleton.SettingsFileEngineTestSuite" time="0.001"/>
+  <system-out><![CDATA[Opening the settings file
+Save settings from file
+Loading settings from file
+Opened: myapp.settings
+Closing the settings file
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

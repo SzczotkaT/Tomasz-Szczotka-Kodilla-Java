@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.stream.array.ArrayOperationsTestSuite" tests="1" skipped="0" failures="0" errors="0"
-           timestamp="2018-09-27T18:19:44" hostname="Tomek-Komputer" time="0.12">
-    <properties/>
-    <testcase name="testArrayOperations" classname="com.kodilla.stream.array.ArrayOperationsTestSuite" time="0.12"/>
-    <system-out><![CDATA[0
+<testsuite name="com.kodilla.stream.array.ArrayOperationsTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-27T16:01:16" hostname="Tomek-Komputer" time="0.119">
+  <properties/>
+  <testcase name="testArrayOperations" classname="com.kodilla.stream.array.ArrayOperationsTestSuite" time="0.119"/>
+  <system-out><![CDATA[0
 1
 2
 3
@@ -24,5 +23,5 @@
 18
 19
 ]]></system-out>
-    <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

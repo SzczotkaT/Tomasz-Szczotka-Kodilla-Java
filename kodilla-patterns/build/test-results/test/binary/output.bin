@@ -1,0 +1,141 @@
+lBigMac{bun='Sesam bun', burgers=2, sauce='BBQ', ingredients=[Tomato, Onion, Cheese, Pickle, Bacon, Salad]}
+ |  |  |wQ|wP|  |  |  |  |  |  |
+ |  |  |  |  |  |  |  |  |  |  |
+ |  |  |  |  |  |  |  |  |  |  |
+ |  |  |  |  |  |  |  |  |  |  |
+ |  |  |  |  |  |  |  |  |  |  |
+ |  |  |  |  |  |  |  |  |  |  |
+ |  |  |  |  |  |  |  |  |  |  |
+ |  |  |  |  |  |  |  |  |  |  |
+ |  |  |  |  |  |  |  |  |  |  |
+ |  |  |  |  |  |  |  |bP|  |  |
+
+IPizza{bottom='thin', sauce='spicy', ingredients=[onion, ham, mushroom]}
+Board [Project number 1]
+     List [Done Tasks]
+"        Task [Done Task number 1]
+"        Task [Done Task number 2]
+"        Task [Done Task number 3]
+"        Task [Done Task number 4]
+"        Task [Done Task number 5]
+"        Task [Done Task number 6]
+"        Task [Done Task number 7]
+"        Task [Done Task number 8]
+"        Task [Done Task number 9]
+#        Task [Done Task number 10]
+     List [In Progress Tasks]
+)        Task [In Progress Task number 1]
+)        Task [In Progress Task number 2]
+)        Task [In Progress Task number 3]
+)        Task [In Progress Task number 4]
+)        Task [In Progress Task number 5]
+)        Task [In Progress Task number 6]
+)        Task [In Progress Task number 7]
+)        Task [In Progress Task number 8]
+)        Task [In Progress Task number 9]
+*        Task [In Progress Task number 10]
+
+Board [Project number 2]
+     List [Done Tasks]
+"        Task [Done Task number 1]
+"        Task [Done Task number 2]
+"        Task [Done Task number 3]
+"        Task [Done Task number 4]
+"        Task [Done Task number 5]
+"        Task [Done Task number 6]
+"        Task [Done Task number 7]
+"        Task [Done Task number 8]
+"        Task [Done Task number 9]
+#        Task [Done Task number 10]
+     List [In Progress Tasks]
+)        Task [In Progress Task number 1]
+)        Task [In Progress Task number 2]
+)        Task [In Progress Task number 3]
+)        Task [In Progress Task number 4]
+)        Task [In Progress Task number 5]
+)        Task [In Progress Task number 6]
+)        Task [In Progress Task number 7]
+)        Task [In Progress Task number 8]
+)        Task [In Progress Task number 9]
+*        Task [In Progress Task number 10]
+
+Board [Project number 3]
+     List [In Progress Tasks]
+)        Task [In Progress Task number 1]
+)        Task [In Progress Task number 2]
+)        Task [In Progress Task number 3]
+)        Task [In Progress Task number 4]
+)        Task [In Progress Task number 5]
+)        Task [In Progress Task number 6]
+)        Task [In Progress Task number 7]
+)        Task [In Progress Task number 8]
+)        Task [In Progress Task number 9]
+*        Task [In Progress Task number 10]
+     List [To Do Tasks]
+#        Task [To Do Task number 1]
+#        Task [To Do Task number 2]
+#        Task [To Do Task number 3]
+#        Task [To Do Task number 4]
+#        Task [To Do Task number 5]
+#        Task [To Do Task number 6]
+#        Task [To Do Task number 7]
+#        Task [To Do Task number 8]
+#        Task [To Do Task number 9]
+$        Task [To Do Task number 10]
+     List [Done Tasks]
+"        Task [Done Task number 1]
+"        Task [Done Task number 2]
+"        Task [Done Task number 3]
+"        Task [Done Task number 4]
+"        Task [Done Task number 5]
+"        Task [Done Task number 6]
+"        Task [Done Task number 7]
+"        Task [Done Task number 8]
+"        Task [Done Task number 9]
+#        Task [Done Task number 10]
+
+Library [Books library 1]
+™[Book{title='Title 1', author='Author 1', publicationDate=2018-10-27}, Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+™[Book{title='Title 1', author='Author 1', publicationDate=2018-10-27}, Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+™[Book{title='Title 1', author='Author 1', publicationDate=2018-10-27}, Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+™[Book{title='Title 1', author='Author 1', publicationDate=2018-10-27}, Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+
+Library [Books libtaty 2]
+™[Book{title='Title 1', author='Author 1', publicationDate=2018-10-27}, Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+™[Book{title='Title 1', author='Author 1', publicationDate=2018-10-27}, Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+™[Book{title='Title 1', author='Author 1', publicationDate=2018-10-27}, Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+™[Book{title='Title 1', author='Author 1', publicationDate=2018-10-27}, Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+
+Library [Books library 1]
+Ó[Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+Ó[Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+Ó[Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+
+Library [Books libtaty 2]
+Ó[Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+Ó[Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+Ó[Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+
+Library [Books library 3]
+™[Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 1', author='Author 1', publicationDate=2018-10-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+™[Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 1', author='Author 1', publicationDate=2018-10-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+™[Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 1', author='Author 1', publicationDate=2018-10-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+™[Book{title='Title 4', author='Author 4', publicationDate=2018-09-27}, Book{title='Title 3', author='Author 3', publicationDate=2018-10-12}, Book{title='Title 1', author='Author 1', publicationDate=2018-10-27}, Book{title='Title 2', author='Author 2', publicationDate=2018-10-17}]
+
+ Log: [logged]
+Last Log was: logged
+ Opening the settings file
+Save settings from file
+Loading settings from file
+Opened: myapp.settings
+ Closing the settings file
+?Steven should: [Conservative predictor] Buy debentures of XYZ
+<Steven now should: [Aggressive predictor] Buy stock of XYZ
+CSteven should buy: [Conservative predictor] Buy debentures of XYZ
+:John should buy: [Aggressive predictor] Buy stock of XYZ
+GKodilla should buy: [Balanced predictor] Buy shared units of Fund XYZ
+%Jack Daniels published on: Facebook
+ Jim Beam published on: Twitter
+'Johnnie Walker published on: Snapchat
+%Jack Daniels published on: Facebook
+$Jack Daniels published on: Twitter
