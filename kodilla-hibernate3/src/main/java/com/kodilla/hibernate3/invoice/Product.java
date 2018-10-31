@@ -32,9 +32,10 @@ public class Product {
     public String getName(){
         return name;
     }
+
     @OneToMany(
             targetEntity = Item.class,
-            mappedBy = "items",
+            mappedBy = "product",
             cascade = CascadeType.ALL,
             fetch = FetchType.LAZY
     )

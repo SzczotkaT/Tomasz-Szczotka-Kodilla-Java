@@ -56,12 +56,12 @@ public class Item {
     }
 
     @ManyToOne
-    @Column(name = "INVOICE_ID")
+    @JoinColumn(name = "INVOICE_ID")
     public Invoice getInvoice(){
         return invoice;
     }
 
-    private void setInvoice(){
+    private void setInvoice(Invoice invoice){
         this.invoice = invoice;
     }
 

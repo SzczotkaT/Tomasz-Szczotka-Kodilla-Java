@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table
+@Table(name = "INVOICES")
 public class Invoice {
     private int id;
     private String number;
