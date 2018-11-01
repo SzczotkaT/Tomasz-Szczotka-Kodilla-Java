@@ -11,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Transactional
 @RunWith(SpringRunner.class)
@@ -18,6 +19,8 @@ import javax.transaction.Transactional;
 public class CompanyDaoTestSuite {
     @Autowired
     CompanyDao companyDao;
+    @Autowired
+    EmployeeDao employeeDao;
 
     @Test
     public void testSaveManyToMany(){
@@ -54,6 +57,34 @@ public class CompanyDaoTestSuite {
         Assert.assertNotEquals(0, softwareMachineId);
         Assert.assertNotEquals(0, dataMaestersId);
         Assert.assertNotEquals(0, greyMatterId);
+    }
 
+    @Test
+    public void testRetriveEmployeeWithLastnameIs(){
+        //Given
+        Employee johnSmith = new Employee("John", "Smith");
+        employeeDao.save(johnSmith);
+
+        //When
+        List<Employee> emL = employeeDao.retriveEmployeeWithLastnameIs("Smith");
+
+        //Then
+        Assert.assertEquals(johnSmith.getLastname(),emL.get(0).getLastname());
+    }
+
+    @Test
+    public void testretriveCompanyNameWhere3FirstLettersAre(){
+        //Given
+        Company softwareMachine = new Company("Software Machine");
+        Company softTouch = new Company("Soft Touch");
+        companyDao.save(softwareMachine);
+        companyDao.save(softTouch);
+
+        //When
+        List<Company> cm3 = companyDao.retrieveCompaniesWithNameLike("Sof");
+
+        //Then
+        Assert.assertEquals(softwareMachine.getName(), cm3.get(0).getName());
+        Assert.assertEquals(softTouch.getName(), cm3.get(1).getName());
     }
 }
