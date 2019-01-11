@@ -7,5 +7,5 @@ include("kodilla-stream")
 include("kodilla-testing")
 include("kodilla-patterns")
 include("kodilla-jdbc")
-
+include 'kodilla-testing2'
 
